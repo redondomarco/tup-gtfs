@@ -1,0 +1,13 @@
+Copiar los shapes de lineas y paradas en las respectivas carpetas dentro de
+actualizacion/Paradas
+actualizacion/Recorridos
+
+Exportar variable para que no pida la contraseña de la base de datos en cada psql
+export PGPASSWORD=
+
+Ejecutar el bash para generar el Graph.obj
+
+sh generar-gtfs.sh
+
+archivo generado en /otp/Graph.obj
+

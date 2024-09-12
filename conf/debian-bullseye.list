@@ -1,0 +1,4 @@
+deb http://mirror.rosario.gov.ar/debian/ bullseye main contrib non-free
+deb http://mirror.rosario.gov.ar/debian/ bullseye-updates main contrib non-free
+#deb http://mirror.rosario.gov.ar/debian/ bullseye-backports main contrib non-free
+deb http://mirror.rosario.gov.ar/security/ bullseye-security main contrib non-free

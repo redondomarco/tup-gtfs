@@ -1,0 +1,42 @@
+{
+    // Routing defaults are any public field or setter in the Java class
+    // org.opentripplanner.routing.core.RoutingRequest
+    "routingDefaults": {
+        "numItineraries": "8",
+	"transferSlack": "300",
+	"--boardSlack": 300,
+	"transferPenalty": "3000",
+	"maxTransfers": "1",
+	"maxInterlineDistance": "600"
+	,"allowBikeRental" : "true"
+	,"bikeSpeed" : "7"
+	,"walkingBike" : "true"
+	,"walkReluctance" : 1
+    }
+,
+    "updaters": [
+
+        {
+          "type": "bike-rental",
+          "frequencySec": 10,
+          "sourceType": "gbfs",
+          //"url": "file:///var/www/html/"
+	  "url": "https://web.mibicitubici.gob.ar/opendata/"
+        }
+,
+ {    "type": "stop-time-updater",
+            "frequencySec": 20,
+            // this is either http or file... shouldn't it default to http or guess from the presence of a URL?
+            "sourceType": "gtfs-http",
+            "url": "http://info-126.pm.rosario.gov.ar:8080/api/v1/key/65562734/agency/01/command/gtfs-rt/tripUpdates",
+            "feedId": "1"
+
+            // "type": "real-time-alerts",
+            // "frequencySec": 30,
+            // "url": "http://realtime.prod.obahart.org:8088/vehicle-positions",
+            // "feedId": ""
+        }
+
+    ]
+
+}

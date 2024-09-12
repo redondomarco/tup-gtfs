@@ -1,0 +1,38 @@
+services:
+  pg_tup:
+    container_name: db_tup
+    #image: postgis/postgis:16-3.4-alpine
+    #image: postgis/postgis-build-env
+    #image: postgis/postgis:16-3.4
+    image: postgis-tup:0.1
+    restart: always
+    environment:
+      #POSTGRES_DB: tup_gtfs
+      POSTGRES_USER: tup_user
+      POSTGRES_PASSWORD: tup_pass
+      PGPASSWORD: tup_pass
+      POSTGRES_INITDB_ARGS: '--locale=es_AR.UTF-8'
+    ports:
+      - 5432:5432
+    volumes:
+      - ./data/tup_gtfs1.sql:/docker-entrypoint-initdb.d/tup_gtfs.sql
+      - ./postgres-data:/var/lib/postgresql/data
+      - ./actualizacion:/actualizacion
+      - ./gtfs:/gtfs
+      - ./gtfs-sql:/gtfs-sql
+      - ./libs:/libs
+      - ./conf/generar-gtfs.sh:/generar-gtfs.sh
+      - ./conf/psql2gtfs.sh:/psql2gtfs.sh
+      - ./conf/shape2psql.sh:/shape2psql.sh
+      - ./otp:/otp
+
+
+  pg_admin4:
+    image: dpage/pgadmin4
+    container_name: db_admin
+    ports:
+      - 9000:80
+    environment:
+      PGADMIN_DEFAULT_EMAIL: mredond1@rosario.gov.ar
+      PGADMIN_DEFAULT_PASSWORD: quelPP99
+      PGADMIN_CONFIG_CONSOLE_LOG_LEVEL: 10

@@ -1,0 +1,12 @@
+{
+  "maxInterlineDistance": 2500 
+,
+  "maxStopToShapeSnapDistance": 5550
+,  
+  "osmWayPropertySet": "norway"
+//,
+//"banDiscouragedBiking" :true
+//,
+//"banDiscouragedWalking": true
+
+}

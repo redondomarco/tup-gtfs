@@ -1,0 +1,3 @@
+agency_name,agency_url,agency_timezone,agency_id,agency_phone,agency_lang
+ROSARIO BUS,http://www.rosariobus.com.ar/,America/Argentina/Cordoba,1,341-4808230,es
+MOVI,http://www.emr.gov.ar/,America/Argentina/Cordoba,2,341-4450100,es
