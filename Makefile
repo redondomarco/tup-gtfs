@@ -12,7 +12,7 @@ logs:
 	@docker-compose logs
 
 
-shell-pg:
+shell:
 	./conf/shell-pg.sh
 
 build:
@@ -21,5 +21,5 @@ build:
 ps:
 	docker ps
 
-rebuild: stop build start ps shell-pg
+rebuild: stop build start ps shell
 

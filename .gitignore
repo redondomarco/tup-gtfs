@@ -1,2 +1,5 @@
 postgres-data/
 otp/Graph.obj
+logs/
+actualizacion/paradas_proj.*
+actualizacion/tup_proj.*
