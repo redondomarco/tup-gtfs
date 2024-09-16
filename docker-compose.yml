@@ -1,13 +1,9 @@
 services:
   pg_tup:
     container_name: db_tup
-    #image: postgis/postgis:16-3.4-alpine
-    #image: postgis/postgis-build-env
-    #image: postgis/postgis:16-3.4
     image: postgis-tup:0.1
     restart: always
     environment:
-      #POSTGRES_DB: tup_gtfs
       POSTGRES_USER: tup_user
       POSTGRES_PASSWORD: tup_pass
       PGPASSWORD: tup_pass

@@ -27,6 +27,6 @@ zip -j otp/gtfs.zip gtfs/*.txt
 
 python2 /libs/transitfeed-1.2.16/feedvalidator.py -n otp/gtfs.zip -o actualizacion/validation-result_${today}.html
 
-/java-se-8u44-ri/bin/java -Xmx2G -jar /libs/otp-1.2.0-shaded.jar --build otp/
+/java-se-8u44-ri/bin/java -Xmx2G -jar /otp-1.2.0-shaded.jar --build otp/
 
 #scp otp/Graph.obj tcatws1-test:/mnt/ubicaciones
