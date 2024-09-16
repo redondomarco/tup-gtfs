@@ -25,7 +25,7 @@ psql "host=pg_tup dbname=tup_gtfs user=${POSTGRES_USER}" -f gtfs-sql/stop-times.
 rm otp/gtfs.zip
 zip -j otp/gtfs.zip gtfs/*.txt
 
-python2 /libs/transitfeed-1.2.16/feedvalidator.py -n otp/gtfs.zip -o actualizacion/validation-result_${today}.html
+python2 /libs/transitfeed-1.2.16/feedvalidator.py -n otp/gtfs.zip -o /logs/validation-result_${today}.html
 
 /java-se-8u44-ri/bin/java -Xmx2G -jar /otp-1.2.0-shaded.jar --build otp/
 

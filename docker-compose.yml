@@ -21,6 +21,7 @@ services:
       - ./conf/psql2gtfs.sh:/psql2gtfs.sh
       - ./conf/shape2psql.sh:/shape2psql.sh
       - ./otp:/otp
+      - ./logs:/logs
 
 
   pg_admin4:

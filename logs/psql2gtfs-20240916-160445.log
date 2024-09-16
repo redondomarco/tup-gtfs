@@ -1,0 +1,1397 @@
+  adding: agency.txt (deflated 35%)
+  adding: calendar.txt (deflated 41%)
+  adding: frequencies.txt (deflated 87%)
+  adding: routes.txt (deflated 61%)
+  adding: shapes.txt (deflated 73%)
+  adding: stop_times.txt (deflated 81%)
+  adding: stops.txt (deflated 68%)
+  adding: trips.txt (deflated 73%)
+validating otp/gtfs.zip
+FeedValidator extension used: None
+Timezone not checked (install pytz package for timezone validation)
+Timezone not checked (install pytz package for timezone validation)
+ERROR: 104 errors and 59 warnings found
+16:05:12.495 INFO (OTPServer.java:38) Wiring up and configuring server.
+16:05:12.502 INFO (GraphBuilder.java:183) Wiring up and configuring graph builder task.
+16:05:12.533 INFO (GraphBuilder.java:190) Searching for graph builder input files in otp
+16:05:12.712 INFO (OTPMain.java:207) Found and loaded JSON configuration file 'otp/build-config.json'
+16:05:12.719 INFO (OTPMain.java:207) Found and loaded JSON configuration file 'otp/router-config.json'
+16:05:12.723 INFO (GraphBuilder.java:201) Summarizing GraphBuilderParameters
+DEFAULT_SUBWAY_ACCESS_TIME = 2.0
+htmlAnnotations = false
+maxHtmlAnnotationsPerFile = 1000
+transit = true
+useTransfersTxt = false
+parentStopLinking = false
+stationTransfers = false
+subwayAccessTime = 2.0
+streets = true
+embedRouterConfig = true
+areaVisibility = false
+platformEntriesLinking = false
+matchBusRoutesToStreets = false
+fetchElevationUS = false
+elevationBucket = null
+fareServiceFactory = DefaultFareServiceFactory
+customNamer = null
+wayPropertySet = org.opentripplanner.graph_builder.module.osm.NorwayWayPropertySetSource@7dc222ae
+staticBikeRental = false
+staticParkAndRide = true
+staticBikeParkAndRide = false
+maxInterlineDistance = 2500
+pruningThresholdIslandWithoutStops = 40
+pruningThresholdIslandWithStops = 5
+banDiscouragedWalking = false
+banDiscouragedBiking = false
+maxTransferDistance = 2000.0
+
+16:05:12.726 INFO (GraphBuilder.java:205) Found GTFS file otp/gtfs.zip
+16:05:12.727 INFO (GraphBuilder.java:209) Found OSM file otp/rosario20221201.pbf
+16:05:12.768 INFO (OpenStreetMapModule.java:174) Gathering OSM from provider: AnyFileBasedOpenStreetMapProviderImpl(otp/rosario20221201.pbf)
+16:05:14.305 WARN (OSMLevel.java:136) Could not determine floor number for layer -2;-1;0, assumed to be ground-level.
+16:05:14.307 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '-2;-1;0' at 187592429. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.383 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1, assumed to be ground-level.
+16:05:14.384 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1' at 250158302. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.517 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1, assumed to be ground-level.
+16:05:14.518 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1' at 319287241. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.519 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1, assumed to be ground-level.
+16:05:14.519 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1' at 319287243. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.519 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1, assumed to be ground-level.
+16:05:14.520 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1' at 319287258. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.520 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1, assumed to be ground-level.
+16:05:14.520 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1' at 319287262. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.543 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1;2;3, assumed to be ground-level.
+16:05:14.544 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1;2;3' at 335296892. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.611 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1, assumed to be ground-level.
+16:05:14.612 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1' at 378169282. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.612 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1, assumed to be ground-level.
+16:05:14.612 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1' at 378169283. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.723 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1, assumed to be ground-level.
+16:05:14.724 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1' at 409627955. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.760 WARN (OSMLevel.java:136) Could not determine floor number for layer 4;5, assumed to be ground-level.
+16:05:14.761 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '4;5' at 458772079. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.761 WARN (OSMLevel.java:136) Could not determine floor number for layer 4;5, assumed to be ground-level.
+16:05:14.761 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '4;5' at 458772080. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.762 WARN (OSMLevel.java:136) Could not determine floor number for layer 4;5, assumed to be ground-level.
+16:05:14.762 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '4;5' at 458772081. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.762 WARN (OSMLevel.java:136) Could not determine floor number for layer 4;5, assumed to be ground-level.
+16:05:14.762 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '4;5' at 458772082. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.763 WARN (OSMLevel.java:136) Could not determine floor number for layer 3;4, assumed to be ground-level.
+16:05:14.763 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '3;4' at 458772083. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.763 WARN (OSMLevel.java:136) Could not determine floor number for layer 3;4, assumed to be ground-level.
+16:05:14.765 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '3;4' at 458772086. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.765 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1;2;3, assumed to be ground-level.
+16:05:14.766 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1;2;3' at 458772099. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.766 WARN (OSMLevel.java:136) Could not determine floor number for layer 4;5, assumed to be ground-level.
+16:05:14.767 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '4;5' at 458773850. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.767 WARN (OSMLevel.java:136) Could not determine floor number for layer 4;5, assumed to be ground-level.
+16:05:14.767 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '4;5' at 458773851. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.771 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1;2, assumed to be ground-level.
+16:05:14.772 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1;2' at 465458510. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.889 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1;2;3;4, assumed to be ground-level.
+16:05:14.889 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1;2;3;4' at 504027366. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.890 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1;2;3;4, assumed to be ground-level.
+16:05:14.890 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1;2;3;4' at 504027466. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.899 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1;2;3, assumed to be ground-level.
+16:05:14.900 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1;2;3' at 518635835. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.900 WARN (OSMLevel.java:136) Could not determine floor number for layer 1;2;3, assumed to be ground-level.
+16:05:14.900 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '1;2;3' at 518635836. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.901 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1;2;3, assumed to be ground-level.
+16:05:14.901 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1;2;3' at 518635839. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.923 WARN (OSMLevel.java:136) Could not determine floor number for layer 1;2;3, assumed to be ground-level.
+16:05:14.924 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '1;2;3' at 549777179. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.924 WARN (OSMLevel.java:136) Could not determine floor number for layer 1;2;3, assumed to be ground-level.
+16:05:14.924 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '1;2;3' at 549777183. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.924 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1;2;3, assumed to be ground-level.
+16:05:14.925 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1;2;3' at 549777191. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:14.936 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1, assumed to be ground-level.
+16:05:14.937 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1' at 565581165. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:15.089 WARN (OSMLevel.java:136) Could not determine floor number for layer 0-10, assumed to be ground-level.
+16:05:15.090 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0-10' at 682251112. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:15.309 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1, assumed to be ground-level.
+16:05:15.310 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1' at 907901723. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:15.353 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1, assumed to be ground-level.
+16:05:15.355 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1' at 923212662. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:15.366 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1, assumed to be ground-level.
+16:05:15.368 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1' at 947952590. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:15.368 WARN (OSMLevel.java:136) Could not determine floor number for layer 0;1, assumed to be ground-level.
+16:05:15.368 WARN (OSMDatabase.java:578) Could not infer floor number for layer called '0;1' at 947952604. Vertical movement will still be possible, but elevator cost might be incorrect. Consider an OSM level map.
+16:05:17.697 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479970
+16:05:17.698 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479971
+16:05:17.698 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479968
+16:05:17.698 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479969
+16:05:17.698 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479974
+16:05:17.698 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13336783
+16:05:17.698 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479975
+16:05:17.698 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13336782
+16:05:17.698 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479972
+16:05:17.699 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13336781
+16:05:17.699 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479973
+16:05:17.699 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13336780
+16:05:17.699 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479978
+16:05:17.702 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479979
+16:05:17.703 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479976
+16:05:17.703 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479977
+16:05:17.703 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479982
+16:05:17.703 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479983
+16:05:17.703 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479980
+16:05:17.703 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479981
+16:05:17.703 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479986
+16:05:17.704 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13336795
+16:05:17.704 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479987
+16:05:17.704 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13336794
+16:05:17.704 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4481110
+16:05:17.704 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479984
+16:05:17.704 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13336793
+16:05:17.704 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4481111
+16:05:17.704 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479985
+16:05:17.705 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13336792
+16:05:17.705 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479990
+16:05:17.705 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13336799
+16:05:17.705 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479991
+16:05:17.705 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479988
+16:05:17.705 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7843937
+16:05:17.705 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13336797
+16:05:17.706 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479989
+16:05:17.706 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7843936
+16:05:17.706 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13336796
+16:05:17.706 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4481116
+16:05:17.706 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479994
+16:05:17.706 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13336787
+16:05:17.706 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479995
+16:05:17.706 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13336786
+16:05:17.706 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479992
+16:05:17.706 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13336785
+16:05:17.707 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4481119
+16:05:17.707 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479993
+16:05:17.707 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13336784
+16:05:17.707 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479998
+16:05:17.707 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13336791
+16:05:17.707 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4481113
+16:05:17.707 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479999
+16:05:17.708 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13336790
+16:05:17.708 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479996
+16:05:17.708 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13336789
+16:05:17.708 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4481115
+16:05:17.708 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479997
+16:05:17.708 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13336788
+16:05:17.709 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4481124
+16:05:17.709 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479938
+16:05:17.709 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4481125
+16:05:17.709 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479939
+16:05:17.709 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479936
+16:05:17.709 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4481127
+16:05:17.709 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479937
+16:05:17.710 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4481120
+16:05:17.710 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479942
+16:05:17.710 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4481121
+16:05:17.710 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479943
+16:05:17.710 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4481122
+16:05:17.711 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479940
+16:05:17.711 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479941
+16:05:17.711 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479946
+16:05:17.711 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479947
+16:05:17.712 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479944
+16:05:17.712 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13336801
+16:05:17.712 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479945
+16:05:17.712 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4481128
+16:05:17.712 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479950
+16:05:17.712 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4481129
+16:05:17.712 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479951
+16:05:17.713 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479948
+16:05:17.713 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479954
+16:05:17.713 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479955
+16:05:17.713 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479952
+16:05:17.713 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479953
+16:05:17.713 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479958
+16:05:17.713 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479956
+16:05:17.713 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479957
+16:05:17.714 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479962
+16:05:17.714 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479963
+16:05:17.714 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479960
+16:05:17.714 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4489343
+16:05:17.714 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479961
+16:05:17.714 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479966
+16:05:17.714 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479967
+16:05:17.714 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479964
+16:05:17.715 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479965
+16:05:17.715 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479906
+16:05:17.715 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479907
+16:05:17.715 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479904
+16:05:17.715 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479905
+16:05:17.715 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479910
+16:05:17.715 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479911
+16:05:17.715 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479908
+16:05:17.716 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6660131
+16:05:17.716 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479909
+16:05:17.716 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479914
+16:05:17.716 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479915
+16:05:17.716 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479912
+16:05:17.716 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479913
+16:05:17.716 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479918
+16:05:17.716 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8523982
+16:05:17.717 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479919
+16:05:17.717 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8523983
+16:05:17.717 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479916
+16:05:17.717 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479917
+16:05:17.717 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479922
+16:05:17.717 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479923
+16:05:17.717 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479920
+16:05:17.717 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8523984
+16:05:17.718 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479921
+16:05:17.718 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8523985
+16:05:17.718 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479926
+16:05:17.718 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479927
+16:05:17.718 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479924
+16:05:17.718 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479925
+16:05:17.718 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479930
+16:05:17.718 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479931
+16:05:17.719 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479928
+16:05:17.719 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479929
+16:05:17.719 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479934
+16:05:17.719 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479935
+16:05:17.719 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479932
+16:05:17.719 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479933
+16:05:17.719 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524003
+16:05:17.720 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524006
+16:05:17.720 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524007
+16:05:17.720 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524004
+16:05:17.720 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524005
+16:05:17.720 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524010
+16:05:17.720 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524011
+16:05:17.720 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524008
+16:05:17.721 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524009
+16:05:17.721 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524014
+16:05:17.721 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524015
+16:05:17.721 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524012
+16:05:17.721 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524013
+16:05:17.721 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524018
+16:05:17.721 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524019
+16:05:17.721 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524016
+16:05:17.722 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524017
+16:05:17.722 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524022
+16:05:17.722 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524023
+16:05:17.722 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524020
+16:05:17.722 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8524021
+16:05:17.722 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479898
+16:05:17.722 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479899
+16:05:17.723 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479902
+16:05:17.723 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479903
+16:05:17.723 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479900
+16:05:17.723 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479901
+16:05:17.723 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7397606
+16:05:17.723 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844065
+16:05:17.723 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7397607
+16:05:17.724 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844064
+16:05:17.724 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844055
+16:05:17.724 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844054
+16:05:17.724 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844053
+16:05:17.724 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844052
+16:05:17.724 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844051
+16:05:17.724 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844050
+16:05:17.724 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844049
+16:05:17.725 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844048
+16:05:17.725 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844063
+16:05:17.725 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844062
+16:05:17.725 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844061
+16:05:17.725 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844060
+16:05:17.725 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9470011
+16:05:17.726 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844059
+16:05:17.726 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9470012
+16:05:17.726 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844058
+16:05:17.726 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9470013
+16:05:17.726 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844057
+16:05:17.726 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9470014
+16:05:17.726 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844056
+16:05:17.726 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844039
+16:05:17.727 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844038
+16:05:17.727 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844037
+16:05:17.727 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844036
+16:05:17.727 WARN (OSMDatabase.java:919) Unable to process public transportation relation 14094436
+16:05:17.727 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844035
+16:05:17.727 WARN (OSMDatabase.java:919) Unable to process public transportation relation 14094435
+16:05:17.727 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844034
+16:05:17.727 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844033
+16:05:17.728 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844032
+16:05:17.728 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5857505
+16:05:17.728 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844047
+16:05:17.728 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844046
+16:05:17.728 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844045
+16:05:17.728 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844044
+16:05:17.728 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844043
+16:05:17.728 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844042
+16:05:17.729 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844041
+16:05:17.729 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844040
+16:05:17.729 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480034
+16:05:17.729 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480035
+16:05:17.729 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480032
+16:05:17.729 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480033
+16:05:17.729 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4489344
+16:05:17.730 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480038
+16:05:17.730 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480036
+16:05:17.730 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480037
+16:05:17.730 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844031
+16:05:17.730 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7844030
+16:05:17.730 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7348410
+16:05:17.730 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7348411
+16:05:17.730 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7348412
+16:05:17.731 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7229600
+16:05:17.731 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9502815
+16:05:17.731 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9502814
+16:05:17.731 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6144140
+16:05:17.731 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6144139
+16:05:17.731 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6144138
+16:05:17.731 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480002
+16:05:17.732 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480003
+16:05:17.732 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480000
+16:05:17.732 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480001
+16:05:17.732 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480006
+16:05:17.732 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480007
+16:05:17.732 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480004
+16:05:17.732 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480005
+16:05:17.732 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480010
+16:05:17.733 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480011
+16:05:17.733 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480008
+16:05:17.733 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480009
+16:05:17.733 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480014
+16:05:17.733 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480015
+16:05:17.733 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480012
+16:05:17.733 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480013
+16:05:17.734 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480018
+16:05:17.734 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7536771
+16:05:17.734 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480019
+16:05:17.734 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9502816
+16:05:17.734 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480016
+16:05:17.734 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480017
+16:05:17.734 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480022
+16:05:17.734 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480023
+16:05:17.735 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480020
+16:05:17.735 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480021
+16:05:17.735 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480026
+16:05:17.735 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480027
+16:05:17.735 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480024
+16:05:17.735 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480025
+16:05:17.735 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480030
+16:05:17.736 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480031
+16:05:17.736 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480028
+16:05:17.736 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6480029
+16:05:17.736 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9634233
+16:05:17.737 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6320391
+16:05:17.737 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9691642
+16:05:17.737 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9691641
+16:05:17.737 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9482733
+16:05:17.737 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6664677
+16:05:17.738 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8884487
+16:05:17.738 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8884491
+16:05:17.738 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8884490
+16:05:17.738 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5853655
+16:05:17.738 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8884489
+16:05:17.738 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5853654
+16:05:17.738 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8884488
+16:05:17.738 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4297171
+16:05:17.739 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4297170
+16:05:17.739 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9601343
+16:05:17.739 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8884543
+16:05:17.739 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9601346
+16:05:17.739 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9601347
+16:05:17.740 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9601344
+16:05:17.740 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6373778
+16:05:17.740 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8311170
+16:05:17.740 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8311171
+16:05:17.741 WARN (OSMDatabase.java:919) Unable to process public transportation relation 10420881
+16:05:17.743 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4538967
+16:05:17.744 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4538968
+16:05:17.744 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9171627
+16:05:17.744 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5759615
+16:05:17.744 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5759614
+16:05:17.745 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5759613
+16:05:17.745 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5759612
+16:05:17.745 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5759611
+16:05:17.745 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5759610
+16:05:17.745 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13284094
+16:05:17.745 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13284095
+16:05:17.746 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8311536
+16:05:17.746 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8311537
+16:05:17.746 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8311535
+16:05:17.746 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5366469
+16:05:17.749 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6599420
+16:05:17.749 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6599421
+16:05:17.749 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6599422
+16:05:17.749 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7090934
+16:05:17.749 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8082142
+16:05:17.750 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8082141
+16:05:17.750 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6034166
+16:05:17.750 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8262357
+16:05:17.750 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7185057
+16:05:17.750 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7185056
+16:05:17.750 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8139441
+16:05:17.751 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7185059
+16:05:17.751 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7185058
+16:05:17.751 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7029435
+16:05:17.751 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7029433
+16:05:17.751 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7029432
+16:05:17.751 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5759616
+16:05:17.751 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7029430
+16:05:17.751 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7029429
+16:05:17.753 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7029428
+16:05:17.753 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7512729
+16:05:17.756 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4522664
+16:05:17.757 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7185053
+16:05:17.757 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7185052
+16:05:17.757 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7185055
+16:05:17.757 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7185054
+16:05:17.757 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7242395
+16:05:17.757 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7185051
+16:05:17.758 WARN (OSMDatabase.java:919) Unable to process public transportation relation 12133300
+16:05:17.760 WARN (OSMDatabase.java:919) Unable to process public transportation relation 10572688
+16:05:17.766 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8311627
+16:05:17.767 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6652765
+16:05:17.767 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6652764
+16:05:17.767 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6652761
+16:05:17.767 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6652760
+16:05:17.767 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6652763
+16:05:17.767 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6652762
+16:05:17.768 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611748
+16:05:17.769 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070507
+16:05:17.769 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611749
+16:05:17.770 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070506
+16:05:17.770 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611750
+16:05:17.770 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070505
+16:05:17.770 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611751
+16:05:17.770 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6984489
+16:05:17.770 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070504
+16:05:17.770 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6144793
+16:05:17.770 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611744
+16:05:17.771 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611745
+16:05:17.771 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611746
+16:05:17.771 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6144794
+16:05:17.771 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611747
+16:05:17.771 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070508
+16:05:17.771 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070499
+16:05:17.771 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070498
+16:05:17.771 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070497
+16:05:17.772 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070496
+16:05:17.773 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611752
+16:05:17.774 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070503
+16:05:17.774 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611753
+16:05:17.774 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070502
+16:05:17.774 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611754
+16:05:17.774 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070501
+16:05:17.774 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070500
+16:05:17.774 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425887
+16:05:17.774 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425886
+16:05:17.774 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425885
+16:05:17.775 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8815573
+16:05:17.775 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425884
+16:05:17.775 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425883
+16:05:17.775 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425882
+16:05:17.775 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425881
+16:05:17.775 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425880
+16:05:17.775 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425879
+16:05:17.775 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425878
+16:05:17.776 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425877
+16:05:17.776 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425876
+16:05:17.776 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425875
+16:05:17.776 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8311587
+16:05:17.776 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425874
+16:05:17.776 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425903
+16:05:17.776 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425902
+16:05:17.777 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425901
+16:05:17.777 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425900
+16:05:17.777 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425899
+16:05:17.777 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425898
+16:05:17.777 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425897
+16:05:17.777 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13284268
+16:05:17.777 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425896
+16:05:17.777 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611724
+16:05:17.777 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425895
+16:05:17.778 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611725
+16:05:17.778 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425894
+16:05:17.778 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611726
+16:05:17.778 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425893
+16:05:17.778 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611727
+16:05:17.778 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425892
+16:05:17.778 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425891
+16:05:17.782 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425890
+16:05:17.782 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425889
+16:05:17.782 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611723
+16:05:17.782 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425888
+16:05:17.783 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611732
+16:05:17.783 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070491
+16:05:17.783 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425919
+16:05:17.783 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611733
+16:05:17.783 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070490
+16:05:17.783 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425918
+16:05:17.783 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611734
+16:05:17.783 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070489
+16:05:17.783 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8315660
+16:05:17.784 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425917
+16:05:17.784 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611735
+16:05:17.784 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070488
+16:05:17.784 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8315661
+16:05:17.784 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425916
+16:05:17.784 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611728
+16:05:17.784 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070495
+16:05:17.784 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425915
+16:05:17.788 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611729
+16:05:17.788 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070494
+16:05:17.788 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425914
+16:05:17.788 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611730
+16:05:17.788 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070493
+16:05:17.788 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425913
+16:05:17.789 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611731
+16:05:17.789 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070492
+16:05:17.789 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425912
+16:05:17.789 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611740
+16:05:17.789 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070483
+16:05:17.789 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425911
+16:05:17.789 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611741
+16:05:17.789 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070482
+16:05:17.789 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425910
+16:05:17.790 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611742
+16:05:17.790 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070481
+16:05:17.790 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425909
+16:05:17.790 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6148902
+16:05:17.790 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611743
+16:05:17.790 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070480
+16:05:17.791 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425908
+16:05:17.791 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611736
+16:05:17.791 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070487
+16:05:17.791 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425907
+16:05:17.791 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611737
+16:05:17.791 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070486
+16:05:17.791 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425906
+16:05:17.792 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611738
+16:05:17.792 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070485
+16:05:17.792 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425905
+16:05:17.792 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6611739
+16:05:17.792 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7070484
+16:05:17.792 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425904
+16:05:17.792 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8283122
+16:05:17.795 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4477926
+16:05:17.796 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4477927
+16:05:17.796 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8274902
+16:05:17.796 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8274900
+16:05:17.796 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8274901
+16:05:17.796 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8274898
+16:05:17.796 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8274899
+16:05:17.796 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8274897
+16:05:17.797 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4662267
+16:05:17.797 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4662266
+16:05:17.797 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4662265
+16:05:17.797 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13284096
+16:05:17.797 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7046078
+16:05:17.798 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13271839
+16:05:17.798 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7046077
+16:05:17.798 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13275921
+16:05:17.798 WARN (OSMDatabase.java:919) Unable to process public transportation relation 11084622
+16:05:17.798 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13271842
+16:05:17.798 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13271840
+16:05:17.798 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13271841
+16:05:17.799 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7447452
+16:05:17.799 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6484891
+16:05:17.799 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7136364
+16:05:17.799 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7136365
+16:05:17.799 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426062
+16:05:17.799 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426061
+16:05:17.799 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426060
+16:05:17.799 WARN (OSMDatabase.java:919) Unable to process public transportation relation 14066901
+16:05:17.799 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426059
+16:05:17.799 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426058
+16:05:17.800 WARN (OSMDatabase.java:919) Unable to process public transportation relation 14066899
+16:05:17.800 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426057
+16:05:17.800 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426056
+16:05:17.800 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8758413
+16:05:17.800 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426055
+16:05:17.800 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8758412
+16:05:17.800 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426054
+16:05:17.800 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426053
+16:05:17.800 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426052
+16:05:17.800 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8758409
+16:05:17.801 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426051
+16:05:17.801 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426050
+16:05:17.801 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8758411
+16:05:17.801 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426049
+16:05:17.801 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5395549
+16:05:17.801 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8758410
+16:05:17.801 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426048
+16:05:17.801 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8344687
+16:05:17.801 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8344686
+16:05:17.801 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6476926
+16:05:17.802 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7578718
+16:05:17.803 WARN (OSMDatabase.java:919) Unable to process public transportation relation 12346598
+16:05:17.803 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5760034
+16:05:17.803 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425935
+16:05:17.803 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425934
+16:05:17.803 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425933
+16:05:17.803 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425932
+16:05:17.803 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425931
+16:05:17.804 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425930
+16:05:17.804 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425929
+16:05:17.804 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425928
+16:05:17.804 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425927
+16:05:17.804 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425926
+16:05:17.804 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425925
+16:05:17.804 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425924
+16:05:17.804 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425923
+16:05:17.804 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425922
+16:05:17.805 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425921
+16:05:17.805 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425920
+16:05:17.805 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425951
+16:05:17.805 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425950
+16:05:17.805 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425949
+16:05:17.805 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425948
+16:05:17.805 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425947
+16:05:17.805 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425946
+16:05:17.805 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425945
+16:05:17.805 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425944
+16:05:17.806 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425943
+16:05:17.806 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425942
+16:05:17.806 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425941
+16:05:17.806 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425940
+16:05:17.806 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425939
+16:05:17.806 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425938
+16:05:17.807 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6018245
+16:05:17.807 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425937
+16:05:17.807 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6018244
+16:05:17.807 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425936
+16:05:17.807 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8205533
+16:05:17.807 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425967
+16:05:17.807 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425966
+16:05:17.807 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425965
+16:05:17.807 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8205534
+16:05:17.807 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425964
+16:05:17.808 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425963
+16:05:17.808 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425962
+16:05:17.808 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425961
+16:05:17.808 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7091403
+16:05:17.808 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425960
+16:05:17.808 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425959
+16:05:17.808 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7341273
+16:05:17.808 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425958
+16:05:17.808 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7341274
+16:05:17.808 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425957
+16:05:17.808 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425956
+16:05:17.809 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7501022
+16:05:17.809 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8303826
+16:05:17.809 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425955
+16:05:17.809 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7501023
+16:05:17.809 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8815659
+16:05:17.809 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425954
+16:05:17.809 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425953
+16:05:17.809 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425952
+16:05:17.809 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425983
+16:05:17.810 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425982
+16:05:17.810 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425981
+16:05:17.810 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425980
+16:05:17.810 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425979
+16:05:17.810 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425978
+16:05:17.810 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425977
+16:05:17.810 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425976
+16:05:17.810 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425975
+16:05:17.810 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425974
+16:05:17.810 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425973
+16:05:17.811 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425972
+16:05:17.811 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8328387
+16:05:17.811 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425971
+16:05:17.811 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13272182
+16:05:17.811 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425970
+16:05:17.811 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13272183
+16:05:17.811 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425969
+16:05:17.811 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425968
+16:05:17.811 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425986
+16:05:17.812 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425985
+16:05:17.812 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9425984
+16:05:17.812 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426031
+16:05:17.812 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426030
+16:05:17.812 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426029
+16:05:17.812 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426028
+16:05:17.812 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426027
+16:05:17.812 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426026
+16:05:17.813 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426025
+16:05:17.813 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426024
+16:05:17.813 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426023
+16:05:17.813 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426022
+16:05:17.813 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426021
+16:05:17.813 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426020
+16:05:17.813 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426019
+16:05:17.813 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426047
+16:05:17.814 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426046
+16:05:17.814 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4285619
+16:05:17.814 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426045
+16:05:17.814 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4285618
+16:05:17.814 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426044
+16:05:17.814 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4285621
+16:05:17.814 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426043
+16:05:17.814 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4285620
+16:05:17.814 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426042
+16:05:17.814 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426041
+16:05:17.815 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426040
+16:05:17.815 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426039
+16:05:17.815 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426038
+16:05:17.815 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426037
+16:05:17.815 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426036
+16:05:17.815 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426035
+16:05:17.815 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426034
+16:05:17.816 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426033
+16:05:17.816 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9426032
+16:05:17.816 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6157661
+16:05:17.816 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6157660
+16:05:17.816 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6157662
+16:05:17.816 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6157657
+16:05:17.816 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6157656
+16:05:17.816 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6157659
+16:05:17.816 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6157658
+16:05:17.816 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6157653
+16:05:17.817 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6157652
+16:05:17.817 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6157655
+16:05:17.817 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6157654
+16:05:17.817 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13362643
+16:05:17.817 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8373605
+16:05:17.817 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8373604
+16:05:17.817 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7394655
+16:05:17.818 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8857009
+16:05:17.818 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7062865
+16:05:17.818 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8857030
+16:05:17.818 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8857029
+16:05:17.818 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7062818
+16:05:17.818 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7062817
+16:05:17.818 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7062816
+16:05:17.818 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6534455
+16:05:17.818 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6534456
+16:05:17.819 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7337231
+16:05:17.819 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7337230
+16:05:17.819 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7337229
+16:05:17.819 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7337228
+16:05:17.819 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7337227
+16:05:17.819 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7337226
+16:05:17.819 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8303899
+16:05:17.819 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7337225
+16:05:17.819 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7337224
+16:05:17.820 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7337223
+16:05:17.820 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7337222
+16:05:17.820 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5383485
+16:05:17.820 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7062815
+16:05:17.820 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7062814
+16:05:17.820 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7062813
+16:05:17.820 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7337232
+16:05:17.820 WARN (OSMDatabase.java:919) Unable to process public transportation relation 12227897
+16:05:17.821 WARN (OSMDatabase.java:919) Unable to process public transportation relation 12227900
+16:05:17.822 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7824876
+16:05:17.822 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7824875
+16:05:17.823 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9856341
+16:05:17.823 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6563245
+16:05:17.823 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6563246
+16:05:17.823 WARN (OSMDatabase.java:919) Unable to process public transportation relation 10491242
+16:05:17.823 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6563247
+16:05:17.823 WARN (OSMDatabase.java:919) Unable to process public transportation relation 10491243
+16:05:17.823 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6563252
+16:05:17.823 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6563253
+16:05:17.824 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6563248
+16:05:17.824 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7022015
+16:05:17.824 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13362463
+16:05:17.824 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6563249
+16:05:17.824 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6563250
+16:05:17.824 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6563251
+16:05:17.824 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9856353
+16:05:17.824 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7231086
+16:05:17.824 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7513714
+16:05:17.825 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7231087
+16:05:17.825 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7181928
+16:05:17.825 WARN (OSMDatabase.java:919) Unable to process public transportation relation 10434200
+16:05:17.825 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7231102
+16:05:17.825 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7231103
+16:05:17.825 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7231100
+16:05:17.825 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7231101
+16:05:17.825 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5764675
+16:05:17.825 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7231098
+16:05:17.826 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5764674
+16:05:17.826 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7231099
+16:05:17.826 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7231096
+16:05:17.826 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7231097
+16:05:17.826 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7231094
+16:05:17.827 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7231095
+16:05:17.827 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7231092
+16:05:17.827 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7231093
+16:05:17.827 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7231090
+16:05:17.827 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7231091
+16:05:17.827 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7231088
+16:05:17.827 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7231089
+16:05:17.827 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8304210
+16:05:17.827 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8304209
+16:05:17.828 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6227485
+16:05:17.828 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6518319
+16:05:17.828 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6518318
+16:05:17.828 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6518317
+16:05:17.828 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6518316
+16:05:17.828 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4617750
+16:05:17.828 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8890071
+16:05:17.828 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4617751
+16:05:17.828 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6518322
+16:05:17.828 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4617748
+16:05:17.829 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6518321
+16:05:17.829 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4617749
+16:05:17.829 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6518320
+16:05:17.829 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4617759
+16:05:17.829 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4617756
+16:05:17.829 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4617757
+16:05:17.829 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4617754
+16:05:17.829 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4617755
+16:05:17.829 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4617753
+16:05:17.830 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8890072
+16:05:17.830 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4277817
+16:05:17.830 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4277816
+16:05:17.830 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4277819
+16:05:17.830 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4277818
+16:05:17.830 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4277821
+16:05:17.830 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4277820
+16:05:17.830 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4277822
+16:05:17.830 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7419609
+16:05:17.830 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8304342
+16:05:17.831 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8304343
+16:05:17.831 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7419611
+16:05:17.831 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7419610
+16:05:17.831 WARN (OSMDatabase.java:919) Unable to process public transportation relation 11204118
+16:05:17.831 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5703318
+16:05:17.831 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5703317
+16:05:17.831 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7526050
+16:05:17.831 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7526051
+16:05:17.831 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7526048
+16:05:17.832 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7526049
+16:05:17.832 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7526042
+16:05:17.832 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7526043
+16:05:17.832 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7526040
+16:05:17.832 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7526041
+16:05:17.832 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7526046
+16:05:17.832 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7526047
+16:05:17.832 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7231104
+16:05:17.832 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7526044
+16:05:17.832 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7526045
+16:05:17.833 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6477462
+16:05:17.833 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6477460
+16:05:17.833 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6477465
+16:05:17.833 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9881516
+16:05:17.833 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5326621
+16:05:17.833 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5326620
+16:05:17.834 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6879224
+16:05:17.834 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6879225
+16:05:17.834 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6879226
+16:05:17.834 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9402141
+16:05:17.834 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9402140
+16:05:17.834 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9402139
+16:05:17.834 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9402138
+16:05:17.834 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9402136
+16:05:17.835 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8890140
+16:05:17.835 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6879223
+16:05:17.835 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4560885
+16:05:17.835 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4560884
+16:05:17.835 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4560881
+16:05:17.835 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4560880
+16:05:17.835 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4560883
+16:05:17.835 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4560882
+16:05:17.835 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7399346
+16:05:17.836 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7399347
+16:05:17.836 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7399348
+16:05:17.836 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7399350
+16:05:17.836 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7399351
+16:05:17.836 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7399352
+16:05:17.836 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6784939
+16:05:17.836 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6784938
+16:05:17.836 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7223200
+16:05:17.836 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7223201
+16:05:17.836 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7223198
+16:05:17.840 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7223199
+16:05:17.840 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7223196
+16:05:17.840 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7223197
+16:05:17.840 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7223194
+16:05:17.840 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7223195
+16:05:17.840 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7223192
+16:05:17.840 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7223193
+16:05:17.840 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7223190
+16:05:17.840 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7223191
+16:05:17.841 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7391346
+16:05:17.841 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6781025
+16:05:17.841 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6207614
+16:05:17.842 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6207615
+16:05:17.842 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13539567
+16:05:17.842 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7587927
+16:05:17.842 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8521894
+16:05:17.842 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7088196
+16:05:17.842 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7088192
+16:05:17.842 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7088193
+16:05:17.842 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7088194
+16:05:17.842 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7088195
+16:05:17.844 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7088188
+16:05:17.845 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7088189
+16:05:17.845 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7088190
+16:05:17.845 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7088191
+16:05:17.845 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7088184
+16:05:17.845 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7088185
+16:05:17.845 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7088186
+16:05:17.845 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7088187
+16:05:17.846 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7088180
+16:05:17.846 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7088181
+16:05:17.846 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7088182
+16:05:17.846 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7088183
+16:05:17.849 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7088179
+16:05:17.849 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7378960
+16:05:17.849 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8521958
+16:05:17.849 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8521959
+16:05:17.850 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8521957
+16:05:17.850 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8521962
+16:05:17.850 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8521963
+16:05:17.850 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8521960
+16:05:17.850 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8521961
+16:05:17.850 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8521966
+16:05:17.851 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8521967
+16:05:17.852 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8521964
+16:05:17.852 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8521965
+16:05:17.852 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5744679
+16:05:17.852 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8521968
+16:05:17.853 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8521969
+16:05:17.853 WARN (OSMDatabase.java:919) Unable to process public transportation relation 12310720
+16:05:17.853 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5744681
+16:05:17.853 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5744680
+16:05:17.854 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4458692
+16:05:17.854 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4495552
+16:05:17.854 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4495553
+16:05:17.854 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13854811
+16:05:17.854 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4552919
+16:05:17.854 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6752501
+16:05:17.854 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4552918
+16:05:17.854 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4552913
+16:05:17.854 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4552915
+16:05:17.854 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4552920
+16:05:17.855 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9402386
+16:05:17.855 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7084239
+16:05:17.855 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7424193
+16:05:17.856 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7424192
+16:05:17.856 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6781095
+16:05:17.856 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6781094
+16:05:17.856 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13199370
+16:05:17.856 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7424189
+16:05:17.856 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7424188
+16:05:17.856 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7424191
+16:05:17.857 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6781096
+16:05:17.857 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7424190
+16:05:17.866 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7006346
+16:05:17.868 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7006347
+16:05:17.868 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7006348
+16:05:17.868 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4495549
+16:05:17.868 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4495550
+16:05:17.868 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4495551
+16:05:17.869 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7092596
+16:05:17.869 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7092597
+16:05:17.869 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7092598
+16:05:17.869 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9464278
+16:05:17.869 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9464279
+16:05:17.869 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9464280
+16:05:17.869 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9464281
+16:05:17.869 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9464282
+16:05:17.869 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9464283
+16:05:17.869 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9464284
+16:05:17.870 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9464285
+16:05:17.870 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9464286
+16:05:17.870 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9464287
+16:05:17.870 WARN (OSMDatabase.java:919) Unable to process public transportation relation 12282347
+16:05:17.870 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9513419
+16:05:17.870 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9513421
+16:05:17.870 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9513420
+16:05:17.870 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9513423
+16:05:17.870 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9513422
+16:05:17.873 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9480688
+16:05:17.873 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9480689
+16:05:17.874 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9480690
+16:05:17.874 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9480691
+16:05:17.874 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4270373
+16:05:17.875 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9480692
+16:05:17.875 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9480693
+16:05:17.875 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9480694
+16:05:17.875 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9480695
+16:05:17.876 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9480696
+16:05:17.876 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9480697
+16:05:17.876 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9480698
+16:05:17.876 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9480699
+16:05:17.876 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9480700
+16:05:17.877 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9480701
+16:05:17.877 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9480702
+16:05:17.877 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9480703
+16:05:17.877 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9464288
+16:05:17.877 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9464289
+16:05:17.877 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9464290
+16:05:17.877 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9464291
+16:05:17.877 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9464292
+16:05:17.878 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9464293
+16:05:17.878 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9464294
+16:05:17.878 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9480685
+16:05:17.878 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9480686
+16:05:17.878 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9480687
+16:05:17.878 WARN (OSMDatabase.java:919) Unable to process public transportation relation 11569456
+16:05:17.878 WARN (OSMDatabase.java:919) Unable to process public transportation relation 11569457
+16:05:17.878 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6654432
+16:05:17.878 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6691270
+16:05:17.879 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6691271
+16:05:17.879 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6691268
+16:05:17.879 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6691269
+16:05:17.879 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6670797
+16:05:17.879 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6691278
+16:05:17.879 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6691279
+16:05:17.879 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4540911
+16:05:17.879 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6691276
+16:05:17.879 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6691277
+16:05:17.879 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6691274
+16:05:17.879 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6691275
+16:05:17.879 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6691272
+16:05:17.879 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6691273
+16:05:17.880 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4540916
+16:05:17.880 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4540913
+16:05:17.880 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4540912
+16:05:17.880 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4540915
+16:05:17.880 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6691280
+16:05:17.880 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4540914
+16:05:17.880 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6691281
+16:05:17.880 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6412711
+16:05:17.881 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6412710
+16:05:17.881 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4266376
+16:05:17.881 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9615684
+16:05:17.881 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6773180
+16:05:17.881 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6773179
+16:05:17.881 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6773177
+16:05:17.881 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7580035
+16:05:17.881 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7580034
+16:05:17.883 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13113655
+16:05:17.883 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8878774
+16:05:17.884 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5614093
+16:05:17.884 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7236147
+16:05:17.884 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8161796
+16:05:17.884 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8161798
+16:05:17.884 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8161793
+16:05:17.884 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8161794
+16:05:17.884 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8161795
+16:05:17.884 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7265005
+16:05:17.885 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9480704
+16:05:17.885 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6335182
+16:05:17.886 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7412408
+16:05:17.886 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4553367
+16:05:17.886 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4553366
+16:05:17.886 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5880463
+16:05:17.886 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5880462
+16:05:17.886 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4553369
+16:05:17.887 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4553368
+16:05:17.887 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5417811
+16:05:17.887 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7326531
+16:05:17.887 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7326558
+16:05:17.888 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6863652
+16:05:17.888 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6863653
+16:05:17.888 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6863654
+16:05:17.889 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8817654
+16:05:17.889 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4541236
+16:05:17.889 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4541233
+16:05:17.889 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4541232
+16:05:17.889 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4541235
+16:05:17.889 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5368615
+16:05:17.889 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5368616
+16:05:17.889 WARN (OSMDatabase.java:919) Unable to process public transportation relation 10926883
+16:05:17.890 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8727346
+16:05:17.890 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6564828
+16:05:17.890 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6564829
+16:05:17.890 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6314970
+16:05:17.890 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6564830
+16:05:17.890 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8309700
+16:05:17.890 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6314971
+16:05:17.890 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8309701
+16:05:17.890 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6314972
+16:05:17.890 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6314973
+16:05:17.890 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6564826
+16:05:17.891 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6564827
+16:05:17.891 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7371704
+16:05:17.891 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7371705
+16:05:17.891 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7371706
+16:05:17.891 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9427835
+16:05:17.891 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8309632
+16:05:17.891 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8309883
+16:05:17.891 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4480088
+16:05:17.891 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4480089
+16:05:17.892 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7257134
+16:05:17.892 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7257135
+16:05:17.892 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8309804
+16:05:17.892 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8309805
+16:05:17.892 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4492305
+16:05:17.892 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6999092
+16:05:17.892 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7445513
+16:05:17.893 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7445514
+16:05:17.893 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4484290
+16:05:17.893 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7666942
+16:05:17.893 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4496591
+16:05:17.893 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7666943
+16:05:17.893 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9174042
+16:05:17.893 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9174041
+16:05:17.893 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9174040
+16:05:17.893 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4496592
+16:05:17.893 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6196418
+16:05:17.893 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9174039
+16:05:17.893 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9174038
+16:05:17.894 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9174037
+16:05:17.894 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9174036
+16:05:17.894 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5582069
+16:05:17.894 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4553973
+16:05:17.894 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4553972
+16:05:17.894 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4553975
+16:05:17.894 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4553974
+16:05:17.895 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4553971
+16:05:17.895 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4553977
+16:05:17.895 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4553976
+16:05:17.895 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4492420
+16:05:17.895 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6286492
+16:05:17.895 WARN (OSMDatabase.java:919) Unable to process public transportation relation 12283005
+16:05:17.895 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4492419
+16:05:17.895 WARN (OSMDatabase.java:919) Unable to process public transportation relation 14113795
+16:05:17.895 WARN (OSMDatabase.java:919) Unable to process public transportation relation 1981633
+16:05:17.895 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5389474
+16:05:17.895 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6614166
+16:05:17.896 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7011690
+16:05:17.896 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7011691
+16:05:17.896 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7011688
+16:05:17.896 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7011689
+16:05:17.896 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466359
+16:05:17.896 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466358
+16:05:17.896 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466360
+16:05:17.896 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6012241
+16:05:17.896 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466363
+16:05:17.896 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466362
+16:05:17.896 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4435279
+16:05:17.896 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466365
+16:05:17.897 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466364
+16:05:17.897 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9465245
+16:05:17.897 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466367
+16:05:17.897 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4435276
+16:05:17.897 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466366
+16:05:17.897 WARN (OSMDatabase.java:919) Unable to process public transportation relation 10710449
+16:05:17.897 WARN (OSMDatabase.java:919) Unable to process public transportation relation 10710448
+16:05:17.897 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4558191
+16:05:17.897 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4558190
+16:05:17.898 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4558194
+16:05:17.898 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7478578
+16:05:17.898 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7478579
+16:05:17.898 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13237633
+16:05:17.898 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13237632
+16:05:17.898 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13237635
+16:05:17.898 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13237634
+16:05:17.898 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13237636
+16:05:17.899 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7666944
+16:05:17.899 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7343372
+16:05:17.899 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7343373
+16:05:17.899 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4578773
+16:05:17.899 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4578772
+16:05:17.899 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4578774
+16:05:17.899 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4578771
+16:05:17.899 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4578781
+16:05:17.899 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4578780
+16:05:17.899 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4578783
+16:05:17.900 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4578782
+16:05:17.900 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6192581
+16:05:17.900 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4578777
+16:05:17.900 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4578776
+16:05:17.900 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4578778
+16:05:17.900 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4578788
+16:05:17.900 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4578785
+16:05:17.900 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4578784
+16:05:17.900 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4578787
+16:05:17.900 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4578786
+16:05:17.900 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13237625
+16:05:17.900 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13237624
+16:05:17.901 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13237627
+16:05:17.901 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13237626
+16:05:17.901 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13237629
+16:05:17.901 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13237628
+16:05:17.901 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13237631
+16:05:17.901 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13237630
+16:05:17.901 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13237617
+16:05:17.901 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13237619
+16:05:17.901 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9440555
+16:05:17.901 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13237618
+16:05:17.901 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13237621
+16:05:17.901 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13237620
+16:05:17.902 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13237623
+16:05:17.902 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13237622
+16:05:17.902 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466401
+16:05:17.902 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466400
+16:05:17.902 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466403
+16:05:17.902 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466402
+16:05:17.902 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466404
+16:05:17.902 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466385
+16:05:17.902 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466384
+16:05:17.902 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466387
+16:05:17.903 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466386
+16:05:17.903 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466389
+16:05:17.903 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466388
+16:05:17.903 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466391
+16:05:17.903 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466390
+16:05:17.903 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5598653
+16:05:17.903 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466393
+16:05:17.903 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466392
+16:05:17.903 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466395
+16:05:17.903 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466394
+16:05:17.903 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466397
+16:05:17.903 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466396
+16:05:17.904 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466399
+16:05:17.904 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466398
+16:05:17.904 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466369
+16:05:17.904 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466368
+16:05:17.904 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466371
+16:05:17.904 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466370
+16:05:17.904 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466373
+16:05:17.904 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466372
+16:05:17.904 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466375
+16:05:17.904 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466374
+16:05:17.904 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466377
+16:05:17.904 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466376
+16:05:17.905 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466379
+16:05:17.905 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466378
+16:05:17.905 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466381
+16:05:17.905 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466380
+16:05:17.905 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466383
+16:05:17.905 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7466382
+16:05:17.905 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6229576
+16:05:17.905 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6192758
+16:05:17.905 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13893369
+16:05:17.905 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5881454
+16:05:17.905 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9432759
+16:05:17.906 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7573051
+16:05:17.906 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7573053
+16:05:17.906 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7573052
+16:05:17.906 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5369407
+16:05:17.907 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8457773
+16:05:17.908 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8457772
+16:05:17.908 WARN (OSMDatabase.java:919) Unable to process public transportation relation 12283406
+16:05:17.908 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8335042
+16:05:17.908 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8335041
+16:05:17.908 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4595334
+16:05:17.908 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4595335
+16:05:17.908 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4595333
+16:05:17.908 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4595340
+16:05:17.909 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4595341
+16:05:17.909 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4595338
+16:05:17.909 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4595339
+16:05:17.909 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5963415
+16:05:17.909 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4595336
+16:05:17.909 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4595337
+16:05:17.909 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7585441
+16:05:17.909 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4484767
+16:05:17.909 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4484772
+16:05:17.909 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4484773
+16:05:17.909 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4484775
+16:05:17.910 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7364243
+16:05:17.910 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4484768
+16:05:17.910 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7364244
+16:05:17.910 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9068142
+16:05:17.910 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7364245
+16:05:17.910 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6504075
+16:05:17.910 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4484776
+16:05:17.910 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9551817
+16:05:17.910 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9830387
+16:05:17.910 WARN (OSMDatabase.java:919) Unable to process public transportation relation 9830386
+16:05:17.911 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8122134
+16:05:17.911 WARN (OSMDatabase.java:919) Unable to process public transportation relation 5742544
+16:05:17.911 WARN (OSMDatabase.java:919) Unable to process public transportation relation 8814380
+16:05:17.911 WARN (OSMDatabase.java:919) Unable to process public transportation relation 13016938
+16:05:17.911 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6307789
+16:05:17.911 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6479831
+16:05:17.911 WARN (OSMDatabase.java:919) Unable to process public transportation relation 4292513
+16:05:17.911 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6872960
+16:05:17.911 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6872961
+16:05:17.911 WARN (OSMDatabase.java:919) Unable to process public transportation relation 6872962
+16:05:17.911 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7352193
+16:05:17.911 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7352194
+16:05:17.912 WARN (OSMDatabase.java:919) Unable to process public transportation relation 7352195
+16:05:17.912 INFO (OSMDatabase.java:328) Intersecting unconnected areas...
+16:05:24.444 INFO (OSMDatabase.java:541) Created 155 virtual intersection nodes.
+16:05:24.452 INFO (OpenStreetMapModule.java:181) Building street graph from OSM
+16:05:32.525 INFO (OpenStreetMapModule.java:406) Skipping visibility graph construction for walkable areas and using just area rings for edges.
+16:05:35.343 INFO (OpenStreetMapModule.java:437) Done building rings for walkable areas.
+16:05:35.343 INFO (OpenStreetMapModule.java:444) Building P+R areas
+16:05:35.379 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (460653616) not linked to any streets; it will not be usable.
+16:05:35.382 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (376480006) not linked to any streets; it will not be usable.
+16:05:35.384 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (499666568) not linked to any streets; it will not be usable.
+16:05:35.384 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (419898774) not linked to any streets; it will not be usable.
+16:05:35.387 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (465458494) not linked to any streets; it will not be usable.
+16:05:35.389 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (304751849) not linked to any streets; it will not be usable.
+16:05:35.390 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (375433528) not linked to any streets; it will not be usable.
+16:05:35.392 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (502944659) not linked to any streets; it will not be usable.
+16:05:35.393 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (458162156) not linked to any streets; it will not be usable.
+16:05:35.394 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (304799451) not linked to any streets; it will not be usable.
+16:05:35.395 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (375962939) not linked to any streets; it will not be usable.
+16:05:35.398 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (431070235) not linked to any streets; it will not be usable.
+16:05:35.400 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (518959871) not linked to any streets; it will not be usable.
+16:05:35.401 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (915619366) not linked to any streets; it will not be usable.
+16:05:35.401 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (383448662) not linked to any streets; it will not be usable.
+16:05:35.404 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R Pellegrini Parking' (397523696) not linked to any streets; it will not be usable.
+16:05:35.407 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (419597208) not linked to any streets; it will not be usable.
+16:05:35.407 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (708680294) not linked to any streets; it will not be usable.
+16:05:35.407 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (297229887) not linked to any streets; it will not be usable.
+16:05:35.408 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (465458501) not linked to any streets; it will not be usable.
+16:05:35.411 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (383293755) not linked to any streets; it will not be usable.
+16:05:35.413 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (276767014) not linked to any streets; it will not be usable.
+16:05:35.414 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (418816513) not linked to any streets; it will not be usable.
+16:05:35.416 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (431070234) not linked to any streets; it will not be usable.
+16:05:35.417 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (515634505) not linked to any streets; it will not be usable.
+16:05:35.418 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (756106887) not linked to any streets; it will not be usable.
+16:05:35.419 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (431070232) not linked to any streets; it will not be usable.
+16:05:35.422 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (670706442) not linked to any streets; it will not be usable.
+16:05:35.423 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (363833643) not linked to any streets; it will not be usable.
+16:05:35.424 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (418124129) not linked to any streets; it will not be usable.
+16:05:35.425 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R Bitar' (422823460) not linked to any streets; it will not be usable.
+16:05:35.425 WARN (OpenStreetMapModule.java:511) Park and ride 'P+R' (334056770) not linked to any streets; it will not be usable.
+16:05:35.426 INFO (OpenStreetMapModule.java:454) Created 88 P+R.
+16:05:35.436 INFO (OpenStreetMapModule.java:959) graph-wide: Multiplying all bike safety values by 1.6666666
+16:05:35.659 INFO (PruneFloatingIslands.java:73) Pruning isolated islands in street network
+16:05:36.314 INFO (StreetUtils.java:116) 414 sub graphs found
+16:05:36.564 WARN (StreetUtils.java:138) Removed edgeless vertices after pruning islands
+16:05:36.585 INFO (GtfsModule.java:157) reading GTFS bundle at otp/gtfs.zip (1)
+16:05:36.606 INFO (GtfsModule.java:174) reading entities: org.onebusaway.gtfs.model.Agency
+16:05:36.830 INFO (GtfsModule.java:183) This Agency has the ID 1
+16:05:36.831 INFO (GtfsModule.java:183) This Agency has the ID 2
+16:05:36.831 INFO (GtfsModule.java:174) reading entities: org.onebusaway.gtfs.model.ShapePoint
+16:05:38.053 INFO (GtfsModule.java:174) reading entities: org.onebusaway.gtfs.model.Route
+16:05:38.101 INFO (GtfsModule.java:174) reading entities: org.onebusaway.gtfs.model.Stop
+16:05:38.217 INFO (GtfsModule.java:174) reading entities: org.onebusaway.gtfs.model.Trip
+16:05:38.259 INFO (GtfsModule.java:174) reading entities: org.onebusaway.gtfs.model.StopTime
+16:05:38.774 INFO (GtfsModule.java:174) reading entities: org.onebusaway.gtfs.model.ServiceCalendar
+16:05:38.790 INFO (GtfsModule.java:174) reading entities: org.onebusaway.gtfs.model.ServiceCalendarDate
+16:05:38.791 INFO (GtfsModule.java:174) reading entities: org.onebusaway.gtfs.model.FareAttribute
+16:05:38.792 INFO (GtfsModule.java:174) reading entities: org.onebusaway.gtfs.model.FareRule
+16:05:38.794 INFO (GtfsModule.java:174) reading entities: org.onebusaway.gtfs.model.Frequency
+16:05:38.814 INFO (GtfsModule.java:174) reading entities: org.onebusaway.gtfs.model.Pathway
+16:05:38.815 INFO (GtfsModule.java:174) reading entities: org.onebusaway.gtfs.model.Transfer
+16:05:38.818 INFO (GtfsModule.java:174) reading entities: org.onebusaway.gtfs.model.FeedInfo
+16:05:43.537 WARN (GTFSPatternHopFactory.java:398) Trip 1_63 visits stops repeatedly. Removed duplicates at stop sequence numbers {116, 117, 119}.
+16:05:44.162 WARN (GTFSPatternHopFactory.java:398) Trip 1_162 visits stops repeatedly. Removed duplicates at stop sequence numbers {96, 97, 99}.
+16:05:46.581 INFO (GTFSPatternHopFactory.java:453) Added 98 frequency-based and 0 single-trip timetable entries.
+16:05:46.582 INFO (TripPattern.java:380) Generating unique names for stop patterns on each route.
+16:05:46.804 INFO (GTFSPatternHopFactory.java:542) Finding interlining trips based on block IDs.
+16:05:46.804 INFO (GTFSPatternHopFactory.java:608) Done finding interlining trips and creating the corresponding edges.
+16:05:47.264 INFO (TransitToTaggedStopsModule.java:53) Linking transit stops to tagged bus stops...
+16:05:47.960 INFO (StreetLinkerModule.java:49) Linking transit stops, bike rental stations, bike parking areas, and park-and-rides to graph . . .
+16:06:09.291 INFO (GraphIndex.java:128) Indexing graph...
+16:06:09.576 INFO (GraphIndex.java:595) Clustering stops by geographic proximity and name...
+16:06:10.789 INFO (GraphIndex.java:202) Creating a spatial index for stop clusters.
+16:06:10.840 INFO (GraphIndex.java:191) Done indexing graph.
+16:06:10.841 INFO (DirectTransferGenerator.java:71) Creating direct transfer edges between stops using the street network from OSM...
+16:06:15.054 INFO (DirectTransferGenerator.java:84) Linked 1000 stops
+16:06:18.560 INFO (DirectTransferGenerator.java:84) Linked 2000 stops
+16:06:22.689 INFO (DirectTransferGenerator.java:84) Linked 3000 stops
+16:06:24.719 INFO (DirectTransferGenerator.java:113) Done connecting stops to one another. Created a total of 66195 transfers from 3530 stops.
+16:06:24.760 INFO (Graph.java:970) Summary (number of each type of annotation):
+16:06:24.762 INFO (Graph.java:976)     TurnRestrictionException - 119
+16:06:24.763 INFO (Graph.java:976)     TurnRestrictionBad - 100
+16:06:24.763 INFO (Graph.java:976)     Graphwide - 1
+16:06:24.763 INFO (Graph.java:976)     ParkAndRideUnlinked - 32
+16:06:24.763 INFO (Graph.java:976)     GraphConnectivity - 388
+16:06:24.763 INFO (Graph.java:976)     RepeatedStops - 2
+16:06:24.763 INFO (Graph.java:976)     StopNotLinkedForTransfers - 28
+16:06:24.763 INFO (Graph.java:976)     HopZeroTime - 3
+16:06:24.763 INFO (Graph.java:976)     LevelAmbiguous - 34
+16:06:24.790 INFO (Graph.java:813) Main graph size: |V|=78169 |E|=254036
+16:06:24.791 INFO (Graph.java:814) Writing graph /otp/Graph.obj ...
+16:06:27.488 INFO (Graph.java:852) Graph written.
+16:06:27.834 INFO (GraphBuilder.java:171) Graph building took 1,3 minutes.
