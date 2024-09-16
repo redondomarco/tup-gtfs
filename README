@@ -4,11 +4,14 @@ ver instalacion-docker.txt
 descargo proyecto
 git clone https://github.com/redondomarco/tup-gtfs.git
 
+cd tup-gtfs
+
 construir la imagen
 make build
 
 si procede correctamente
 
+make start
 make shell
 
 y dentro del contenedor
