@@ -24,12 +24,12 @@ services:
       - ./logs:/logs
 
 
-  pg_admin4:
-    image: dpage/pgadmin4
-    container_name: db_admin
-    ports:
-      - 9000:80
-    environment:
-      PGADMIN_DEFAULT_EMAIL: mredond1@rosario.gov.ar
-      PGADMIN_DEFAULT_PASSWORD: quelPP99
-      PGADMIN_CONFIG_CONSOLE_LOG_LEVEL: 10
+#  pg_admin4:
+#    image: dpage/pgadmin4
+#    container_name: db_admin
+#    ports:
+#      - 9000:80
+#    environment:
+#      PGADMIN_DEFAULT_EMAIL: mail@dominio.com
+#      PGADMIN_DEFAULT_PASSWORD: password
+#      PGADMIN_CONFIG_CONSOLE_LOG_LEVEL: 10
