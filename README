@@ -1,13 +1,28 @@
+instalacion de docker y docker compose
+ver instalacion-docker.txt
+
+descargo proyecto
+git clone https://github.com/redondomarco/tup-gtfs.git
+
+construir la imagen
+make build
+
+si procede correctamente
+
+make shell
+
+y dentro del contenedor
+sh generar-gtfs.sh
+
+
 Copiar los shapes de lineas y paradas en las respectivas carpetas dentro de
 actualizacion/Paradas
 actualizacion/Recorridos
 
-Exportar variable para que no pida la contraseña de la base de datos en cada psql
-export PGPASSWORD=
+volver a correr
 
-Ejecutar el bash para generar el Graph.obj
+make shell
 
-sh generar-gtfs.sh
+(en el contendedor) sh generar-gtfs.sh
 
-archivo generado en /otp/Graph.obj
-
+archivo generado en otp/Graph.obj
