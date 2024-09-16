@@ -3,3 +3,6 @@ otp/Graph.obj
 logs/
 actualizacion/paradas_proj.*
 actualizacion/tup_proj.*
+actualizacion/paradas*
+actualizacion/tup*
+otp/gtfs.zip
