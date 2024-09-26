@@ -7,3 +7,4 @@ actualizacion/paradas*
 actualizacion/tup*
 otp/gtfs.zip
 otp/output
+otp/*.pbf
