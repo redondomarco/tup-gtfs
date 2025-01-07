@@ -1,5 +1,8 @@
-instalacion de docker y docker compose
-ver instalacion-docker.txt
+Requisitos
+docker y docker compose -> instalacion-docker.txt
+
+make
+sudo apt install make
 
 descargo proyecto
 git clone https://github.com/redondomarco/tup-gtfs.git
