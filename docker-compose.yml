@@ -2,7 +2,7 @@ services:
   pg_tup:
     container_name: db_tup
     image: postgis-tup:0.1
-    restart: always
+    #restart: always
     environment:
       POSTGRES_USER: tup_user
       POSTGRES_PASSWORD: tup_pass

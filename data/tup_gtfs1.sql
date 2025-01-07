@@ -2857,6 +2857,9 @@ COPY public.calles (id_calle, nombre) FROM stdin;
 3050	LAS HERAS (Funes)
 3051	ACAPULCO (Funes)
 3052	MAR DEL PLATA (Funes)
+3053	ELSA MASSA
+3054	CALLE 13114
+3055	CALLE 1323
 \.
 
 
