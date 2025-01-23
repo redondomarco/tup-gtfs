@@ -14202,7 +14202,6 @@ COPY public.tupcodsms (id_ramal, nombre_corto) FROM stdin;
 1016	116 129
 17	120
 18	121
-1081	122 ROJA
 1075	122 VERDE
 21	123
 1076	126 NEGRA
@@ -14228,7 +14227,6 @@ COPY public.tupcodsms (id_ramal, nombre_corto) FROM stdin;
 64	K
 96	Q
 70	CUR-SUR
-65	LINEA DE LA COSTA
 1003	102N 144N
 1048	143N 136 137
 1049	143R 136 137
@@ -14236,6 +14234,10 @@ COPY public.tupcodsms (id_ramal, nombre_corto) FROM stdin;
 1053	145 133 S
 69	E. NOROESTE
 97	ENL.AVE.OES.
+54	146 N
+55	146 R
+19	122 ROJA
+65	LDC
 \.
 
 
